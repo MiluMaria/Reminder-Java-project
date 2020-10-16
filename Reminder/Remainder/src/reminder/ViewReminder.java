@@ -118,33 +118,37 @@ public class ViewReminder extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(table);
         table.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
-
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, -1, 230));
-        jPanel1.add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, 110, -1));
-        jPanel1.add(t3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 100, 20));
-
-        t4.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                t4KeyPressed(evt);
-            }
-        });
-        jPanel1.add(t4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 310, 100, -1));
-
-        jButton5.setText("Edit");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 340, 87, 30));
-
-        t1.setForeground(new java.awt.Color(0, 204, 204));
-        jPanel1.add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 70, -1));
-
-        jLabel2.setText("Select the remainder ");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 50, 350, 10));
-
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 630, 400));
+	        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 61, -1, 380));	
+	        jPanel1.add(t2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, 110, -1));	
+	        jPanel1.add(t3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, 100, -1));	
+		
+	        t4.addKeyListener(new java.awt.event.KeyAdapter() {	
+	            public void keyPressed(java.awt.event.KeyEvent evt) {	
+	                t4KeyPressed(evt);	
+	            }	
+	        });	
+	        jPanel1.add(t4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 20, 100, -1));	
+		
+	        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/edit.png"))); // NOI18N	
+	        jButton5.addActionListener(new java.awt.event.ActionListener() {	
+	            public void actionPerformed(java.awt.event.ActionEvent evt) {	
+	                jButton5ActionPerformed(evt);	
+	            }	
+	        });	
+	        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 87, 82));	
+		
+	        jLabel1.setText("Home");	
+	        jLabel1.setForeground(new java.awt.Color(255, 255, 255));	
+	        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 40, -1));	
+		
+	        t1.setForeground(new java.awt.Color(0, 204, 204));	
+	        jPanel1.add(t1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, 70, -1));	
+		
+	        jLabel2.setText("Select the reminder you want to delete or edit");	
+	        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 46, 350, 10));	
+		
+	        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 450));	
+	
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
