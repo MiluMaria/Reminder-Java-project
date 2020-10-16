@@ -48,18 +48,20 @@ public class ViewReminder extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-
-        jPanel1 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        table = new javax.swing.JTable();
-        t2 = new javax.swing.JTextField();
-        t3 = new javax.swing.JTextField();
-        t4 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
-        t1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();	
+	        jButton4 = new javax.swing.JButton();	
+	        jLabel4 = new javax.swing.JLabel();	
+	        jButton3 = new javax.swing.JButton();	
+	        jLabel3 = new javax.swing.JLabel();	
+	        jScrollPane1 = new javax.swing.JScrollPane();	
+	        table = new javax.swing.JTable();	
+	        t2 = new javax.swing.JTextField();	
+	        t3 = new javax.swing.JTextField();	
+	        t4 = new javax.swing.JTextField();	
+	        jButton5 = new javax.swing.JButton();	
+	        jLabel1 = new javax.swing.JLabel();	
+	        t1 = new javax.swing.JLabel();	
+	        jLabel2 = new javax.swing.JLabel();
 
         setTitle("View Reminder");
         setBackground(new java.awt.Color(116, 208, 253));
@@ -72,16 +74,19 @@ public class ViewReminder extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(116, 208, 253));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton4.setText("Home");
+	        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/home.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 87, 30));
-
-        jButton3.setText("Delete");
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 87, 82));	
+		
+	        jLabel4.setText("Edit Remainder");	
+	        jLabel4.setForeground(new java.awt.Color(255, 255, 255));	
+	        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, 20));	
+		
+	        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/delete.png"))); // NOI18N
         jButton3.setMaximumSize(new java.awt.Dimension(139, 115));
         jButton3.setMinimumSize(new java.awt.Dimension(139, 115));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +94,12 @@ public class ViewReminder extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 340, 86, 30));
+      jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 86, 77));	
+		
+	        jLabel3.setText("Delete Remainder");	
+	        jLabel3.setForeground(new java.awt.Color(255, 255, 255));	
+	        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));	
+	
 
         table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
