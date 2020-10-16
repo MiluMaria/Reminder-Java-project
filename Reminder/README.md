@@ -33,13 +33,6 @@ A Java desktop Application with MySQL database for creating custom reminders.
 * Quartz Scheduler for running Job (Check database every 1 minute for reminder)
 
 
-
-
-## Authors
-
-* **Alen Joseph** - 
-
-
 ## Issue
  Audioplayer support is only upto java 1.8
 
